@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="titulo">BlackJack</header>
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small id="PtsJugador">0</small></h1>
+            <div id="jugador-cartas" class="divCartas">
+                <!-- <img class="carta" src="assets/cartas/2C.png" alt="Cartas"> -->
+            </div>
+        </div>
+    </div>
+    <div class="row container mt-4">
+        <div class="col">
+            <h1>Computadora 1 - <small id='PtsComputadora'>0</small></h1>
+            <div id="computadora-cartas" class="divCartas">
+                <!-- <img class="carta" src="assets/cartas/3C.png" alt="Cartas"> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego-min.js"></script>
+    <script>
+        miModulo.nuevoJuego();
+    </script>
+
+    <footer class="info">
+        <p>Creado por <a target="_blank" href="https://wzamora.com">William Zamora V.</a></p>
+        <p>Tecnologías utilizadas: HTML5, CSS3, JavaScript Puro</p>
+    </footer>
+</body>
+</html>
